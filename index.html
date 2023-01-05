@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    
+<body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to answer this survey.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required="">
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required="">
+      </div>
+      <div>
+        <label id="number-label" for="number">Age&nbsp;<span>(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+      </div>
+      <div>
+        <label>Which option best describes your disposition?</label>
+        <select id="dropdown" name="role" required="">
+          <option disabled="" selected="" value="">Select current disposition</option>
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+        </select>
+      </div>
+    
+      <div>
+        <label>Of these, which are your favorite?</label>
+        <label>
+          <input name="user-recommend" value="tomato" type="radio" checked="">Tomato</label>
+        <label>
+          <input name="user-recommend" value="potato" type="radio">Potato</label>
+      </div>
+    
+      <div>
+        <label>
+          What are your favorite colors?
+          <span>(Check all that apply)</span>
+        </label>
+    
+        <label><input name="prefer" value="front-end-projects" type="checkbox">Red</label>
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox">Blue</label>
+        <label><input name="prefer" value="data-visualization" type="checkbox">Green</label>
+      </div>
+    
+      <div>
+        <p>Tell us how you're feeling in your own words.</p>
+        <textarea id="comments" name="comment" placeholder="Enter your feelings here..."></textarea>
+      </div>
+    
+      <div>
+        <button type="submit" id="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+
+</body>
+
